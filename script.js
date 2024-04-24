@@ -5,9 +5,8 @@ let select = document.querySelector("#colorSelect");
 btn.addEventListener("click", deleted);
 
 function deleted() {
-	let selectedValue = select.option[select.selectedIndex];
-	let selectOption = selectedValue.text;
-    console.log(`Selected value: ${selectedValue}`);
-
-	selectedValue.remove();
+	 let selectedIndex = select.selectedIndex;
+    
+    // Remove the selected option from the dropdown list
+    select.remove(selectedIndex);
 }
